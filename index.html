@@ -1,50 +1,39 @@
 <!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Hubert's HTML Bio</title>
+  <title>CSS Stylesheets with Relative Paths</title>
+
+  <!-- This line is money! It points your HTML to the CSS file. -->
+  <!-- Notice the "relative" pathway? It matches a file inside our current directory's "assets" folder. Open it to see our style rules. -->
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-    <h1>Hubert Cheng</h1>
-  <img src="https://github.com/chengh8/chengh8.github.io/blob/master/18622183_10212920040345053_8702117083269642006_n.jpg"
-  alt="Hubert Cheng Profile Picture">
+  <header>
+    <h1>Student Bio</h1>
+  </header>
 
-  <p>   I'm currently in the Piping Engineering field working at Bechtel corporation as a Piping Materials Specialist/Pipe 
-    Spec Engineer.</p>
-  <p>-I like dogs</p>
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Your Name</h2>
+        <img id="bio-image" src="18622183_10212920040345053_8702117083269642006_n" alt="Your Name">
+      </section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum risus ut justo laoreet consectetur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc dui neque, malesuada egestas aliquet ac, commodo in magna. Etiam mollis odio at mi maximus hendrerit. Integer aliquam id lectus nec hendrerit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris rhoncus eget nulla in ornare. Maecenas massa nibh, commodo non condimentum eu, congue tempus neque. Donec neque mi, ullamcorper eget fringilla et, iaculis vitae tortor. Curabitur vel nunc vel mi lobortis ornare ut non nulla. Etiam ornare libero ac suscipit aliquam. Nunc venenatis felis sit amet velit vehicula interdum. Vivamus iaculis condimentum nulla vitae dapibus.</p>
+    </section>
 
-  <ol>
-    <li><a href="https://www.facebook.com/hubert.cheng.94">facebook</a></li>
-  </ol>
-
-  <table border=2>
-      <tr>
-          <th>Favorite Games</th>
-          <th>Favorite Movies</th>
-          <th>Favorite Activities</th>
-      </tr>
-
-      <tr>
-          <td>Destiny 2</td>
-          <td>Nightmare Before Christmas</td>
-          <td>Basketball</td>
-      </tr>
-
-      <tr>
-          <td>Pokemon</td>
-          <td>BraveHeart</td>
-          <td>Football</td>
-      </tr>
-
-      <tr>
-          <td>League of Legends</td>
-          <td>Fast n Furious</td>
-          <td>Baseball</td>
-      </tr>
-
-  </table>
+    <aside id="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
+        <li><strong>Github:</strong> <a href="#">sampleName</a></li>
+        <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
+      </ul>
+    </aside>
+  </main>
 
 </body>
 
